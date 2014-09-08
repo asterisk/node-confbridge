@@ -1,0 +1,27 @@
+{
+  "name": "asterisk-confbridge",
+  "version": "0.0.1",
+  "description": "ConfBridge using ARI",
+  "private": true,
+  "main": "app.js"
+  "keywords": [
+    "ConfBridge",
+    "ARI",
+    "Asterisk"
+  ],
+  "author": [
+    "Scott Emidy",
+    "Ben Ford"
+  ],
+  "license": "Apache-2.0"
+  "dependencies": {
+    "sql": "^0.39.0",
+    "q": "^1.0.1",
+    "ari-client": "^0.1.1",
+    "machina": "^0.4.0-1"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.1",
+    "grunt": "^0.4.5"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "ariConnection": {
+    "url": "http://localhost:8088",
+    "user": "user",
+    "pass": "secret"
+  }
+}

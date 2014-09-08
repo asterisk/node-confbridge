@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "ConfBridge using ARI",
   "private": true,
-  "main": "app.js"
+  "main": "app.js",
   "keywords": [
     "ConfBridge",
     "ARI",

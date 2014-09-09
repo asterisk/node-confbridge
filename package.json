@@ -13,7 +13,7 @@
     "Scott Emidy",
     "Ben Ford"
   ],
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
   "dependencies": {
     "sql": "^0.39.0",
     "q": "^1.0.1",

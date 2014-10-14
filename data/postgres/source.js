@@ -21,9 +21,17 @@ function PostgresDB(dbConfig) {
         var client = values[0];
         var done = values[1];
         var query = Q.denodeify(client.query.bind(client));
+        var profile = dbConfig.bridgeProfile;
 
-        return query('SELECT * FROM system_admin')
+        return query(util.format('SELECT exists(SELECT 1 FROM bridge_profile WHERE profile = \'%s\')', profile))
           .then(function (result) {
+            if (!result.rows[0].exists) {
+              profile = 'default';
+            }
+            return query(util.format('SELECT * FROM bridge_profile WHERE profile = \'%s\'', profile))
+          })
+          .then(function (result) {
+            console.log('Fetched bridge profile', profile);
             return result.rows[0];
           })
           .catch(function (err) {
@@ -32,6 +40,16 @@ function PostgresDB(dbConfig) {
           .finally(function () {
             done();
           });
+        /*return query('SELECT * FROM system_admin')
+          .then(function (result) {
+            return result.rows[0];
+          })
+          .catch(function (err) {
+            console.error(err);
+          })
+          .finally(function () {
+            done();
+          });*/
     })
     .catch(function (err) {
       console.error(err);

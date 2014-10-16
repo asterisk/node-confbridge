@@ -5,5 +5,5 @@
     "pass": "secret"
   },
   "dbConnection": "postgres://user:secret@localhost/user",
-  "bridgeProfile": "default"
+  "bridgeProfile": "testing"
 }

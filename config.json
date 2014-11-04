@@ -5,5 +5,27 @@
     "pass": "secret"
   },
   "dbConnection": "postgres://user:secret@localhost/user",
-  "bridgeProfile": "testing"
+  "bridgeProfile": "testing",
+  "menuInput": {
+    "mute": "1",
+    "deafMute": "2",
+    "leaveConf": "3",
+    "decLisVol": "4",
+    "resetLisVol": "5",
+    "incLisVol": "6",
+    "decTalkVol": "7",
+    "resetTalkVol": "8",
+    "incTalkVol": "9",
+    "pitchChange": "0",
+    "admin": "*"
+  },
+  "waitingInput": {
+    "verify": "#"
+  },
+  "adminInput": {
+    "toggleLock": "1",
+    "kick": "2",
+    "pauseRecord": "3",
+    "menu": "*"
+  }
 }

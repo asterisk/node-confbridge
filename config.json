@@ -17,7 +17,7 @@
     "resetTalkVol": "8",
     "incTalkVol": "9",
     "pitchChange": "0",
-    "admin": "*"
+    "admin": "#"
   },
   "waitingInput": {
     "verify": "#"
@@ -26,6 +26,11 @@
     "toggleLock": "1",
     "kick": "2",
     "pauseRecord": "3",
-    "menu": "*"
+    "menu": "#"
+  },
+  "leaveConf": {
+    "context": "",
+    "extension": "",
+    "priority": ""
   }
 }

@@ -29,7 +29,7 @@ function PostgresDB(dbConfig) {
               profile = 'default';
             }
             return query('SELECT * FROM bridge_profile WHERE profile = $1',
-                         [profile])
+                         [profile]);
           })
           .then(function (result) {
             console.log('Fetched bridge profile', profile);
@@ -46,7 +46,7 @@ function PostgresDB(dbConfig) {
       console.error(err);
     });
 
-  }
+  };
 
   /**
    * Retrieves a user profile.
@@ -70,7 +70,7 @@ function PostgresDB(dbConfig) {
               userType = 'default';
             }
             return query('SELECT * FROM user_profile WHERE user_type = '
-                       + '$1', [userType])
+                       + '$1', [userType]);
           })
           .then(function (result) {
             return result.rows[0];
@@ -86,7 +86,7 @@ function PostgresDB(dbConfig) {
         console.error(err);
       });
 
-  }
+  };
 
   /**
    * Retrieves a group profile.
@@ -110,7 +110,7 @@ function PostgresDB(dbConfig) {
               groupType = 'default';
             }
             return query('SELECT * FROM group_profile WHERE group_type = '
-                       + '$1', [groupType])
+                       + '$1', [groupType]);
           })
           .then(function (result) {
             return result.rows[0];
@@ -126,7 +126,7 @@ function PostgresDB(dbConfig) {
         console.error(err);
       });
 
-  }
+  };
 
 }
 

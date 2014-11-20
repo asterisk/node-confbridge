@@ -9,7 +9,7 @@
   "menuInput": {
     "mute": "1",
     "deafMute": "2",
-    "leaveConf": "3",
+    "contInDialplan": "3",
     "decLisVol": "4",
     "resetLisVol": "5",
     "incLisVol": "6",
@@ -17,7 +17,7 @@
     "resetTalkVol": "8",
     "incTalkVol": "9",
     "pitchChange": "0",
-    "admin": "*"
+    "admin": "#"
   },
   "waitingInput": {
     "verify": "#"
@@ -25,7 +25,12 @@
   "adminInput": {
     "toggleLock": "1",
     "kick": "2",
-    "pauseRecord": "3",
-    "menu": "*"
+    "toggleRecord": "3",
+    "menu": "#"
+  },
+  "leaveConf": {
+    "context": "",
+    "extension": "",
+    "priority": ""
   }
 }

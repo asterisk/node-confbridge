@@ -13,5 +13,6 @@
   "node": true,
   "quotmark": true,
   "camelcase": true,
-  "maxlen": 80
+  "maxlen": 80,
+  "laxbreak": true
 }

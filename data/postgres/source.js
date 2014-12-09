@@ -22,13 +22,13 @@ function PostgresDB(dbConfig) {
         var done = values[1];
         var query = Q.denodeify(client.query.bind(client));
 
-        return query('SELECT exists(SELECT 1 FROM bridge_profile WHERE profile '
-                   + '= $1)', [profile])
+        return query('SELECT exists(SELECT 1 FROM bridge_profile WHERE '
+                   + 'bridge_type = $1)', [profile])
           .then(function (result) {
             if (!result.rows[0].exists) {
               profile = 'default';
             }
-            return query('SELECT * FROM bridge_profile WHERE profile = $1',
+            return query('SELECT * FROM bridge_profile WHERE bridge_type = $1',
                          [profile]);
           })
           .then(function (result) {

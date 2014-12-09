@@ -5,7 +5,7 @@
     "pass": "secret"
   },
   "dbConnection": "postgres://user:secret@localhost/user",
-  "bridgeProfile": "testing",
+  "bridgeProfile": "default",
   "menuInput": {
     "mute": "1",
     "deafMute": "2",

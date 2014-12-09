@@ -35,6 +35,7 @@ user profile, group profile, and bridge profile settings:
 ```bash
 $cd scripts
 $node defaultdatabase.js
+```
 
 ## Adding new data
 
@@ -72,6 +73,7 @@ application if you have changed it from default. For example:
 exten => 9999,1,NoOp()
         same => n,Stasis(confbridge, usertypename, grouptypename)
         same => n,Hangup()
+```
 
 # ConfBridge application
 
@@ -249,7 +251,7 @@ each of them have differing functional conferencing purposes.
 * type: varchar(50)
 * default: participant
 
-###### Available Options:
+###### Available Options
 * __participant__: the group in which the user can join the conference as a normal
 user. If no group is specified, this becomes the default group.
 * __follower__: the group that receives music on hold until a leader joins, once

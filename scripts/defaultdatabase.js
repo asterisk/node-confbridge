@@ -57,7 +57,7 @@ connect(config.dbConnection)
                      + '\'confbridge-locked\',\'confbridge-unlocked\','
                      + '\'confbridge-muted\',\'confbridge-unmuted\','
                      + '\'confbridge-removed\',false,\'conf-now-recording\','
-                     + '\'conf-waitforleadeer\')');
+                     + '\'conf-waitforleader\')');
       })
       .then(function () {
         return query('SELECT exists(SELECT * FROM information_schema.tables '
